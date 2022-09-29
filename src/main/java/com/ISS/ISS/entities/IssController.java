@@ -7,7 +7,7 @@ import java.util.List;
 
 
 
-@CrossOrigin(origins= {"localhost:4200"}, maxAge = 4800, allowCredentials = "false" )
+@CrossOrigin("http://localhost:4200")
 @RestController
 @RequestMapping(path = "api")
 public class IssController {
