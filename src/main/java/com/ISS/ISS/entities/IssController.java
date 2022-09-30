@@ -33,5 +33,9 @@ public class IssController {
     public Iss getIssById(@PathVariable String id) {
         return issService.getIssById(Integer.valueOf(id));
     }
+    @GetMapping(path = "/people")
+    public Astronauts getCurrentAstronauts() {
+        return issService.getCurrentAstronauts();
+    }
 
 }
